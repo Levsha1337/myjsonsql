@@ -1,0 +1,27 @@
+{
+  "name": "myjsonsql",
+  "version": "1.0.0",
+  "description": "Simple MySQL API based on JSON format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Levsha1337/myjsonsql.git"
+  },
+  "keywords": [
+    "JSON",
+    "MySQL",
+    "NodeJS",
+    "Node",
+    "JavaScript",
+    "API"
+  ],
+  "author": "Levsha1337",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Levsha1337/myjsonsql/issues"
+  },
+  "homepage": "https://github.com/Levsha1337/myjsonsql#readme"
+}
