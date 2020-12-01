@@ -1,9 +1,6 @@
 import mysql2 from 'mysql2/promise';
 
 class TableAdapter {
-    connection = null;
-    table = null;
-
     constructor(connection, table) {
         this.connection = connection;
         this.table = table;
@@ -93,15 +90,12 @@ class TableAdapter {
 }
 
 class MySQLJSON {
-    connection = null;
-    config = null;
-
     constructor(config) {
         this.config = config;
     }
 
     async connect() {
-        if (this.connection === null) {
+        if (this.connection === undefined || this.connection === null) {
             this.connection = await mysql2.createConnection(this.config);
         }
     }
