@@ -1,4 +1,4 @@
-const mysql2 = require('mysql2/promise');
+import mysql2 from 'mysql2/promise';
 
 class TableAdapter {
     connection = null;
@@ -111,4 +111,4 @@ class MySQLJSON {
     }
 }
 
-module.exports = MySQLJSON;
+export default MySQLJSON;
