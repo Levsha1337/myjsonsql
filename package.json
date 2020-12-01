@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Levsha1337/myjsonsql/issues"
   },
-  "homepage": "https://github.com/Levsha1337/myjsonsql#readme"
+  "homepage": "https://github.com/Levsha1337/myjsonsql#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
 }
