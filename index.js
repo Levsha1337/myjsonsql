@@ -1,8 +1,8 @@
 const mysql2 = require('mysql2/promise');
 
 class TableAdapter {
-    connection;
-    table;
+    connection = null;
+    table = null;
 
     constructor(connection, table) {
         this.connection = connection;
@@ -93,15 +93,17 @@ class TableAdapter {
 }
 
 class MySQLJSON {
-    connection;
-    config;
+    connection = null;
+    config = null;
 
     constructor(config) {
         this.config = config;
     }
 
     async connect() {
-        this.connection = await mysql2.createConnection(this.config);
+        if (this.connection === null) {
+            this.connection = await mysql2.createConnection(this.config);
+        }
     }
     
     async createTableAdapter(table) {
