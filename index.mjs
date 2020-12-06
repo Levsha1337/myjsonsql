@@ -1,4 +1,4 @@
-import mysql2 from 'mysql2';
+import mysql2 from 'mysql2/promise';
 
 class TableAdapter {
     constructor(connection, table) {
